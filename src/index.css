@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-light: rgba(238, 243, 248, 0.72);
+  --primary-blue: #00306F;
+  --secondary-blue: #1E5AA8;
+  --light-blue: #7CC6F2;
+  --red-accent: #D61E1E;
+  --text-dark: #1F2937;
+}
+
 html,
 body,
 #root {
@@ -16,8 +25,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #fbf9f8;
-  color: #111827;
+  background: var(--bg-light);
+  color: var(--text-dark);
 }
 
 * {
@@ -32,3 +41,4 @@ a {
 code {
   font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+

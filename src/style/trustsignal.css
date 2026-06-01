@@ -1,5 +1,5 @@
 .trust-section {
-  background: #001A66;
+  background: var(--primary-blue);
   padding: 24px 56px;
   animation: reveal-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -45,7 +45,7 @@
 .trust-icon {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, #6EC1FF, #0A2D8F);
+  background: linear-gradient(135deg, #6EC1FF, var(--secondary-blue));
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 14px;
   position: relative;
@@ -58,7 +58,7 @@
 
 .trust-card:hover .trust-icon {
   transform: rotate(6deg) scale(1.05);
-  background: linear-gradient(135deg, #A8D8FF, #001A66);
+  background: linear-gradient(135deg, var(--light-blue), var(--primary-blue));
 }
 
 .trust-icon svg {
@@ -79,7 +79,7 @@
 
 .trust-content p {
   margin: 0;
-  color: #A8D8FF;
+  color: var(--light-blue);
   font-size: 12px;
   font-family: "Inter", sans-serif;
 }
@@ -108,3 +108,4 @@
     grid-template-columns: 1fr;
   }
 }
+

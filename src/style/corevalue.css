@@ -21,7 +21,7 @@
 
 .value-card {
   flex: 1;
-  background: #F5F7FA;
+  background: var(--bg-light);
   padding: 16px;
   border-radius: 4px;
   transition: transform 220ms ease, box-shadow 220ms ease;
@@ -43,38 +43,38 @@
 }
 
 .value-card.value-blue {
-  border-left: 3px solid #0A2D8F;
+  border-left: 3px solid var(--secondary-blue);
 }
 
 .value-card.value-red {
-  border-left: 3px solid #D71920;
+  border-left: 3px solid var(--red-accent);
 }
 
 .value-card.value-dark {
-  border-left: 3px solid #001A66;
+  border-left: 3px solid var(--primary-blue);
 }
 
 .value-blue .value-icon {
-  color: #0A2D8F;
+  color: var(--secondary-blue);
 }
 
 .value-red .value-icon {
-  color: #D71920;
+  color: var(--red-accent);
 }
 
 .value-dark .value-icon {
-  color: #001A66;
+  color: var(--primary-blue);
 }
 
 .value-card h3 {
-  color: #001A66;
+  color: var(--primary-blue);
   font-size: 18px;
   margin-bottom: 10px;
   font-family: "Hanken Grotesk", sans-serif;
 }
 
 .value-card p {
-  color: #1A1A1A;
+  color: var(--text-dark);
   font-size: 16px;
   line-height: 24px;
   font-family: "Inter", sans-serif;
@@ -100,3 +100,4 @@
     font-size: 15px;
   }
 }
+

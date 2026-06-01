@@ -88,7 +88,7 @@
   width: 20px;
   height: 2px;
   border-radius: 999px;
-  background: #001A66;
+  background: var(--primary-blue);
   transition: transform 180ms ease, opacity 180ms ease;
 }
 
@@ -114,16 +114,16 @@
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 18px;
   line-height: 1.1;
-  color: #1A1A1A;
+  color: var(--text-dark);
   transition: color 180ms ease, transform 180ms ease;
 }
 
 .nav-links a.active {
-  color: #0A2D8F;
+  color: var(--secondary-blue);
 }
 
 .nav-links a:hover {
-  color: #0A2D8F;
+  color: var(--secondary-blue);
   transform: translateY(-2px);
 }
 
@@ -144,19 +144,19 @@
 .sales span {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 18px;
-  color: #1A1A1A;
+  color: var(--text-dark);
 }
 
 .sales a {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  color: #001A66;
+  color: var(--primary-blue);
   text-decoration: none;
 }
 
 .phone-btn {
-  background: #0A2D8F;
+  background: var(--secondary-blue);
   color: #FFFFFF;
   text-decoration: none;
   padding: 4px 12px;
@@ -170,7 +170,7 @@
 .phone-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 26, 102, 0.2);
-  background: #001A66;
+  background: var(--primary-blue);
 }
 
 @media (max-width: 1024px) {
@@ -317,3 +317,4 @@
     padding: 6px 10px;
   }
 }
+

@@ -16,7 +16,7 @@
 
 .tag {
   display: inline-block;
-  background: #D71920;
+  background: var(--red-accent);
   color: #FFFFFF;
   padding: 4px 12px;
   border-radius: 12px;
@@ -28,7 +28,7 @@
 .hero-left h1 {
   font-size: 48px;
   line-height: 1.2;
-  color: #001A66;
+  color: var(--primary-blue);
   margin-bottom: 20px;
   animation: reveal-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: 0.1s;
@@ -37,7 +37,7 @@
 .hero-left p {
   font-size: 18px;
   line-height: 30px;
-  color: #1A1A1A;
+  color: var(--text-dark);
   max-width: 420px;
   animation: reveal-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: 0.2s;
@@ -53,7 +53,7 @@
 }
 
 .primary-btn {
-  background: #0A2D8F;
+  background: var(--secondary-blue);
   color: #FFFFFF;
   border: none;
   padding: 12px 24px;
@@ -65,7 +65,7 @@
 .primary-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 24px rgba(0, 26, 102, 0.22);
-  background: #001A66;
+  background: var(--primary-blue);
 }
 
 .divider {
@@ -92,7 +92,7 @@
 }
 
 .avatars span:nth-child(1) {
-  background: #A8D8FF;
+  background: var(--light-blue);
 }
 
 .avatars span:nth-child(2) {
@@ -100,11 +100,11 @@
 }
 
 .avatars span:nth-child(3) {
-  background: #D71920;
+  background: var(--red-accent);
 }
 
 .customers small {
-  color: #0A2D8F;
+  color: var(--secondary-blue);
   margin-top: 4px;
 }
 
@@ -150,7 +150,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #0A2D8F;
+  color: var(--secondary-blue);
   font-size: 12px;
   font-weight: 700;
 }
@@ -217,3 +217,4 @@
     align-items: center;
   }
 }
+

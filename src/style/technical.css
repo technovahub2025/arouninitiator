@@ -20,12 +20,12 @@
 .title-line {
   width: 32px;
   height: 4px;
-  background: #D71920;
+  background: var(--red-accent);
   border-radius: 12px;
 }
 
 .section-title h2 {
-  color: #001A66;
+  color: var(--primary-blue);
   font-size: 24px;
   margin: 0;
 }
@@ -45,7 +45,7 @@
 }
 
 .tech-image {
-  background: #F5F7FA;
+  background: var(--bg-light);
   border: 1px solid rgba(10, 45, 143, 0.16);
   border-radius: 8px;
   overflow: hidden;
@@ -75,7 +75,7 @@
 }
 
 .unit-label {
-  color: #D71920;
+  color: var(--red-accent);
   font-size: 12px;
   letter-spacing: 1px;
   display: block;
@@ -83,13 +83,13 @@
 }
 
 .tech-content h3 {
-  color: #001A66;
+  color: var(--primary-blue);
   font-size: 28px;
   margin-bottom: 10px;
 }
 
 .tech-content p {
-  color: #1A1A1A;
+  color: var(--text-dark);
   line-height: 1.8;
   margin-bottom: 20px;
 }
@@ -99,7 +99,7 @@
 }
 
 .product-list span {
-  color: #001A66;
+  color: var(--primary-blue);
   font-weight: 700;
   font-size: 14px;
 }
@@ -110,7 +110,7 @@
 }
 
 .product-list li {
-  color: #1A1A1A;
+  color: var(--text-dark);
   margin-bottom: 4px;
   font-size: 14px;
 }
@@ -140,13 +140,13 @@
 
 .stat-card h4 {
   margin: 0;
-  color: #001A66;
+  color: var(--primary-blue);
   font-size: 16px;
 }
 
 .stat-card span {
   font-size: 14px;
-  color: #1A1A1A;
+  color: var(--text-dark);
 }
 
 .tags {
@@ -156,8 +156,8 @@
 }
 
 .tags span {
-  background: #A8D8FF;
-  color: #001A66;
+  background: var(--light-blue);
+  color: var(--primary-blue);
   padding: 4px 10px;
   border-radius: 4px;
   font-size: 14px;
@@ -206,3 +206,4 @@
     flex-wrap: wrap;
   }
 }
+

@@ -1,6 +1,6 @@
 .gallery-section {
   padding: 50px 40px;
-  background: #F5F7FA;
+  background: var(--bg-light);
   scroll-margin-top: 140px;
 }
 
@@ -10,13 +10,13 @@
 }
 
 .gallery-container h2 {
-  color: #001A66;
+  color: var(--primary-blue);
   font-size: 36px;
   margin-bottom: 10px;
 }
 
 .gallery-container p {
-  color: #1A1A1A;
+  color: var(--text-dark);
   font-size: 16px;
   margin-bottom: 30px;
 }
@@ -79,3 +79,4 @@
     font-size: 14px;
   }
 }
+
