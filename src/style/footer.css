@@ -29,6 +29,12 @@
   max-width: 220px;
 }
 
+.footer-about {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
 .social-icons {
   display: flex;
   gap: 8px;
