@@ -31,6 +31,8 @@ function TechnicalExcellence() {
               UV sterilization in Class 100k cleanroom.
             </p>
 
+            
+
             <div className="stats">
               <div className="stat-card">
                 <div className="stat-icon"></div>

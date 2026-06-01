@@ -34,7 +34,10 @@ function Header() {
           className={`nav-links ${menuOpen ? "open" : ""}`}
         >
           <a className="active" href="#home" onClick={closeMenu}>Home</a>
-          <a href="/machines" onClick={closeMenu}>Machines</a>
+          <div className="nav-dropdown">
+            <a href="#products" onClick={closeMenu}>Machines</a>
+            
+          </div>
           <a href="#gallery" onClick={closeMenu}>Gallery</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>

@@ -9,6 +9,8 @@ import ContactSection from './components/contact';
 import Footer from './components/footer';
 import Gallery from './components/gallery';
 
+import Product from './components/product';
+
 function App() {
   return (
     <>
@@ -22,6 +24,8 @@ function App() {
       <BulkOrderCTA/>
 
       <Gallery/>
+
+      <Product/>
 
       <TechnicalExcellence/>
 

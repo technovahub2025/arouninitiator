@@ -94,6 +94,27 @@
   margin-bottom: 20px;
 }
 
+.product-list {
+  margin-bottom: 18px;
+}
+
+.product-list span {
+  color: #001A66;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.product-list ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.product-list li {
+  color: #1A1A1A;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
 .stats {
   display: flex;
   gap: 20px;
