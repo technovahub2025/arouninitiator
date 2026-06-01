@@ -1,5 +1,5 @@
 .contact-section {
-  background: #f5f3f3;
+  background: #F5F7FA;
   padding: 32px 56px;
   animation: reveal-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
   scroll-margin-top: 140px;
@@ -12,16 +12,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #FFFFFF;
   font-size: 20px;
 }
 
 .info-blue {
-  background: #2563eb;
+  background: #0A2D8F;
 }
 
 .info-red {
-  background: #dc2626;
+  background: #D71920;
 }
 .contact-container {
   max-width: 1168px;
@@ -32,7 +32,7 @@
 }
 
 .contact-info h2 {
-  color: #002666;
+  color: #001A66;
   font-size: 28px;
   margin-bottom: 8px;
   font-family: "Hanken Grotesk", sans-serif;
@@ -40,7 +40,7 @@
 }
 
 .contact-info p {
-  color: #434651;
+  color: #1A1A1A;
   font-size: 15px;
   margin-bottom: 24px;
   font-family: "Inter", sans-serif;
@@ -67,27 +67,27 @@
 }
 
 .info-blue {
-  background: #002666;
+  background: #0A2D8F;
 }
 
 .info-red {
-  background: #bb0027;
+  background: #D71920;
 }
 
 .info-item h4 {
   margin: 0;
-  color: #002666;
+  color: #001A66;
   font-size: 14px;
 }
 
 .info-item span {
   font-size: 13px;
-  color: #434651;
+  color: #1A1A1A;
 }
 
 .contact-form-card {
-  background: #ffffff;
-  border: 1px solid #c4c6d3;
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 45, 143, 0.16);
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.08);
@@ -108,7 +108,7 @@
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
-  color: #002666;
+  color: #0A2D8F;
   font-family: "Hanken Grotesk", sans-serif;
 }
 
@@ -116,7 +116,7 @@
 .form-group select,
 .form-group textarea {
   width: 100%;
-  border: 1px solid #c4c6d3;
+  border: 1px solid rgba(10, 45, 143, 0.16);
   padding: 8px 10px;
   font-size: 14px;
   border-radius: 2px;
@@ -127,8 +127,8 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: #002666;
-  box-shadow: 0 0 0 3px rgba(0, 38, 102, 0.12);
+  border-color: #0A2D8F;
+  box-shadow: 0 0 0 3px rgba(10, 45, 143, 0.12);
   transform: translateY(-1px);
 }
 
@@ -139,8 +139,8 @@
 
 .submit-btn {
   width: 100%;
-  background: #002666;
-  color: white;
+  background: #0A2D8F;
+  color: #FFFFFF;
   border: none;
   height: 36px;
   cursor: pointer;
@@ -151,8 +151,8 @@
 
 .submit-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(0, 38, 102, 0.18);
-  background: #001e4d;
+  box-shadow: 0 12px 24px rgba(0, 26, 102, 0.18);
+  background: #001A66;
 }
 
 @media (max-width: 900px) {

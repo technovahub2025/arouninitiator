@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/navbar.css";
 import logo from "../asset/arounmanufacturing.png";
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="header">
       <div className="header-container">
@@ -12,14 +16,30 @@ function Header() {
           className="logo"
         />
 
-        <nav className="nav-links">
-          <a className="active" href="#home">Home</a>
-          <a href="/machines">Machines</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
+        <button
+          type="button"
+          className={`menu-toggle ${menuOpen ? "open" : ""}`}
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
+          onClick={() => setMenuOpen((value) => !value)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <nav
+          id="primary-navigation"
+          className={`nav-links ${menuOpen ? "open" : ""}`}
+        >
+          <a className="active" href="#home" onClick={closeMenu}>Home</a>
+          <a href="/machines" onClick={closeMenu}>Machines</a>
+          <a href="#gallery" onClick={closeMenu}>Gallery</a>
+          <a href="#contact" onClick={closeMenu}>Contact</a>
         </nav>
 
-        <div className="contact-box">
+        <div className={`contact-box ${menuOpen ? "open" : ""}`}>
           <div className="sales">
             <span>Sales Inquiry</span>
             <a href="mailto:arounindustries@gmail.com">

@@ -16,8 +16,8 @@
 
 .tag {
   display: inline-block;
-  background: #bb0027;
-  color: white;
+  background: #D71920;
+  color: #FFFFFF;
   padding: 4px 12px;
   border-radius: 12px;
   font-size: 14px;
@@ -28,7 +28,7 @@
 .hero-left h1 {
   font-size: 48px;
   line-height: 1.2;
-  color: #002666;
+  color: #001A66;
   margin-bottom: 20px;
   animation: reveal-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: 0.1s;
@@ -37,7 +37,7 @@
 .hero-left p {
   font-size: 18px;
   line-height: 30px;
-  color: #434651;
+  color: #1A1A1A;
   max-width: 420px;
   animation: reveal-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: 0.2s;
@@ -53,8 +53,8 @@
 }
 
 .primary-btn {
-  background: #002666;
-  color: white;
+  background: #0A2D8F;
+  color: #FFFFFF;
   border: none;
   padding: 12px 24px;
   border-radius: 4px;
@@ -64,14 +64,14 @@
 
 .primary-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(0, 38, 102, 0.22);
-  background: #001e4d;
+  box-shadow: 0 12px 24px rgba(0, 26, 102, 0.22);
+  background: #001A66;
 }
 
 .divider {
   width: 1px;
   height: 30px;
-  background: #c4c6d3;
+  background: rgba(10, 45, 143, 0.22);
 }
 
 .customers {
@@ -88,23 +88,23 @@
   height: 24px;
   border-radius: 50%;
   margin-left: -6px;
-  border: 2px solid white;
+  border: 2px solid #FFFFFF;
 }
 
 .avatars span:nth-child(1) {
-  background: #b2c5ff;
+  background: #A8D8FF;
 }
 
 .avatars span:nth-child(2) {
-  background: #ffd8d8;
+  background: #6EC1FF;
 }
 
 .avatars span:nth-child(3) {
-  background: #bdc7d6;
+  background: #D71920;
 }
 
 .customers small {
-  color: #002666;
+  color: #0A2D8F;
   margin-top: 4px;
 }
 
@@ -117,7 +117,7 @@
 .hero-right img {
   width: 100%;
   border-radius: 8px;
-  border: 3px solid white;
+  border: 3px solid #FFFFFF;
   box-shadow: 0 10px 15px rgba(0,0,0,0.1);
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
@@ -131,9 +131,9 @@
   position: absolute;
   left: -10px;
   bottom: -10px;
-  background: white;
+  background: #FFFFFF;
   padding: 10px 15px;
-  border: 1px solid #c4c6d3;
+  border: 1px solid rgba(10, 45, 143, 0.16);
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -145,12 +145,12 @@
 .hero-icon {
   width: 32px;
   height: 32px;
-  background: rgba(0, 38, 102, 0.1);
+  background: rgba(10, 45, 143, 0.1);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #002666;
+  color: #0A2D8F;
   font-size: 12px;
   font-weight: 700;
 }

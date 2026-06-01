@@ -7,14 +7,21 @@
 }
 
 .value-icon {
-  font-size: 50px;
-  color: white;
-  margin-bottom: 15px;
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  font-size: 26px;
+  animation: float-soft 4.8s ease-in-out infinite;
 }
 
 .value-card {
   flex: 1;
-  background: #efeded;
+  background: #F5F7FA;
   padding: 16px;
   border-radius: 4px;
   transition: transform 220ms ease, box-shadow 220ms ease;
@@ -36,46 +43,38 @@
 }
 
 .value-card.value-blue {
-  border-left: 3px solid #002666;
+  border-left: 3px solid #0A2D8F;
 }
 
 .value-card.value-red {
-  border-left: 3px solid #bb0027;
+  border-left: 3px solid #D71920;
 }
 
 .value-card.value-dark {
-  border-left: 3px solid #212b36;
-}
-
-.value-icon {
-  width: 24px;
-  height: 24px;
-  background: currentColor;
-  margin-bottom: 10px;
-  animation: float-soft 4.8s ease-in-out infinite;
+  border-left: 3px solid #001A66;
 }
 
 .value-blue .value-icon {
-  color: #002666;
+  color: #0A2D8F;
 }
 
 .value-red .value-icon {
-  color: #bb0027;
+  color: #D71920;
 }
 
 .value-dark .value-icon {
-  color: #212b36;
+  color: #001A66;
 }
 
 .value-card h3 {
-  color: #002666;
+  color: #001A66;
   font-size: 18px;
   margin-bottom: 10px;
   font-family: "Hanken Grotesk", sans-serif;
 }
 
 .value-card p {
-  color: #434651;
+  color: #1A1A1A;
   font-size: 16px;
   line-height: 24px;
   font-family: "Inter", sans-serif;

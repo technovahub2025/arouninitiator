@@ -1,5 +1,5 @@
 .product-section {
-  background: #f5f3f3;
+  background: #F5F7FA;
   padding: 32px 40px;
   animation: reveal-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -20,7 +20,7 @@
 .product-header h2 {
   font-size: 24px;
   line-height: 32px;
-  color: #002666;
+  color: #001A66;
   margin: 0;
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 400;
@@ -29,23 +29,23 @@
 .product-header p {
   font-size: 14px;
   line-height: 22px;
-  color: #434651;
+  color: #1A1A1A;
   margin: 2px 0 0;
   font-family: "Inter", sans-serif;
 }
 
 .view-all {
   font-size: 13px;
-  color: #002666;
+  color: #001A66;
   text-decoration: none;
-  border-bottom: 1px solid #002666;
+  border-bottom: 1px solid #001A66;
   padding-bottom: 2px;
   font-family: "Hanken Grotesk", sans-serif;
   transition: color 180ms ease, transform 180ms ease;
 }
 
 .view-all:hover {
-  color: #bb0027;
+  color: #D71920;
   transform: translateY(-2px);
 }
 
@@ -58,8 +58,8 @@
 .large-product-card {
   position: relative;
   min-height: 220px;
-  background: #ffffff;
-  border: 1px solid #c4c6d3;
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 45, 143, 0.16);
   border-radius: 8px;
   overflow: hidden;
   padding: 18px 20px;
@@ -80,8 +80,8 @@
 
 .product-badge {
   display: inline-block;
-  background: rgba(187, 0, 39, 0.1);
-  color: #bb0027;
+  background: rgba(215, 25, 32, 0.1);
+  color: #D71920;
   font-size: 11px;
   line-height: 16px;
   padding: 1px 6px;
@@ -93,7 +93,7 @@
 .product-content h3 {
   font-size: 24px;
   line-height: 32px;
-  color: #002666;
+  color: #001A66;
   margin: 0 0 4px;
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 400;
@@ -102,14 +102,14 @@
 .product-content p {
   font-size: 15px;
   line-height: 24px;
-  color: #434651;
+  color: #1A1A1A;
   margin: 0 0 12px;
   font-family: "Inter", sans-serif;
 }
 
 .product-content button {
-  background: #002666;
-  color: white;
+  background: #0A2D8F;
+  color: #FFFFFF;
   border: none;
   border-radius: 6px;
   padding: 6px 12px;
@@ -121,8 +121,8 @@
 
 .product-content button:hover {
   transform: translateY(-2px);
-  background: #001e4d;
-  box-shadow: 0 10px 20px rgba(0, 38, 102, 0.18);
+  background: #001A66;
+  box-shadow: 0 10px 20px rgba(0, 26, 102, 0.18);
 }
 
 .n95-img {
@@ -143,8 +143,8 @@
 
 .small-product-card {
   height: 104px;
-  background: #ffffff;
-  border: 1px solid #c4c6d3;
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 45, 143, 0.16);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -172,7 +172,7 @@
 
 .small-product-card:hover {
   transform: translateY(-5px);
-  border-color: #002666;
+  border-color: #0A2D8F;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
 }
 
@@ -197,35 +197,35 @@
 }
 
 .blue-icon {
-  background: #dae2ff;
+  background: #A8D8FF;
 }
 
 .blue-icon::after {
-  background: #002666;
+  background: #0A2D8F;
 }
 
 .red-icon {
-  background: #ffdad8;
+  background: #FFD7D9;
 }
 
 .red-icon::after {
-  background: #bb0027;
+  background: #D71920;
 }
 
 .dark-icon {
-  background: #d9e3f2;
+  background: #BFD7FF;
 }
 
 .dark-icon::after {
-  background: #212b36;
+  background: #001A66;
 }
 
 .gray-icon {
-  background: #e4e2e2;
+  background: #F5F7FA;
 }
 
 .gray-icon::after {
-  background: #434651;
+  background: #1A1A1A;
 }
 
 .product-icon svg {
@@ -233,13 +233,13 @@
   z-index: 1;
   width: 18px;
   height: 18px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .small-product-card h4 {
   font-size: 14px;
   line-height: 20px;
-  color: #002666;
+  color: #001A66;
   margin: 0;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -248,7 +248,7 @@
 .small-product-card p {
   font-size: 12px;
   line-height: 18px;
-  color: #434651;
+  color: #1A1A1A;
   margin: 0;
   font-family: "Inter", sans-serif;
 }

@@ -1,6 +1,6 @@
 .technical-section {
   padding: 50px 40px;
-  background: #fff;
+  background: #FFFFFF;
   animation: reveal-up 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -20,12 +20,12 @@
 .title-line {
   width: 32px;
   height: 4px;
-  background: #bb0027;
+  background: #D71920;
   border-radius: 12px;
 }
 
 .section-title h2 {
-  color: #002666;
+  color: #001A66;
   font-size: 24px;
   margin: 0;
 }
@@ -45,8 +45,8 @@
 }
 
 .tech-image {
-  background: #efeded;
-  border: 1px solid #c4c6d3;
+  background: #F5F7FA;
+  border: 1px solid rgba(10, 45, 143, 0.16);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
@@ -75,7 +75,7 @@
 }
 
 .unit-label {
-  color: #bb0027;
+  color: #D71920;
   font-size: 12px;
   letter-spacing: 1px;
   display: block;
@@ -83,13 +83,13 @@
 }
 
 .tech-content h3 {
-  color: #002666;
+  color: #001A66;
   font-size: 28px;
   margin-bottom: 10px;
 }
 
 .tech-content p {
-  color: #434651;
+  color: #1A1A1A;
   line-height: 1.8;
   margin-bottom: 20px;
 }
@@ -113,19 +113,19 @@
 .stat-icon {
   width: 28px;
   height: 28px;
-  background: rgba(0, 38, 102, 0.08);
+  background: rgba(10, 45, 143, 0.08);
   border-radius: 50%;
 }
 
 .stat-card h4 {
   margin: 0;
-  color: #002666;
+  color: #001A66;
   font-size: 16px;
 }
 
 .stat-card span {
   font-size: 14px;
-  color: #434651;
+  color: #1A1A1A;
 }
 
 .tags {
@@ -135,8 +135,8 @@
 }
 
 .tags span {
-  background: #eae8e7;
-  color: #002666;
+  background: #A8D8FF;
+  color: #001A66;
   padding: 4px 10px;
   border-radius: 4px;
   font-size: 14px;
@@ -145,7 +145,7 @@
 
 .tags span:hover {
   transform: translateY(-2px);
-  background: #dfe7fb;
+  background: #6EC1FF;
 }
 
 @media (max-width: 900px) {
