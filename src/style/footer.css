@@ -19,6 +19,9 @@
   height: 66px;
   object-fit: contain;
   margin-bottom: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 6px 8px;
   animation: pop-in 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -27,12 +30,6 @@
   font-size: 16px;
   line-height: 1.7;
   max-width: 220px;
-}
-
-.footer-about {
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 12px;
 }
 
 .social-icons {
