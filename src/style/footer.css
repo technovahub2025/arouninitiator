@@ -96,12 +96,16 @@
 }
 
 .footer-contact a {
-  color: #D71920;
+  color: #ffffff;
   text-decoration: none;
   font-size: 15px;
   font-weight: 700;
   display: block;
   margin-bottom: 10px;
+}
+
+.footer-contact a[href^="mailto:"] {
+  color: #ffffff;
 }
 
 .footer-contact p {
