@@ -1,10 +1,25 @@
 import React, { useState } from "react";
 import "../style/navbar.css";
-import logo from "../asset/arounlogo.jpeg";
+import logo from "../asset/arounmanufacturing.png";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(() => {
+    if (typeof window === "undefined") return "home";
+
+    if (window.location.pathname.includes("machines")) {
+      return "machines";
+    }
+
+    const hash = window.location.hash.replace("#", "");
+    return hash || "home";
+  });
 
   const closeMenu = () => setMenuOpen(false);
+
+  const handleNavClick = (key) => {
+    setActiveLink(key);
+    closeMenu();
+  };
 
   return (
     <header className="header">
@@ -33,13 +48,38 @@ function Header() {
           id="primary-navigation"
           className={`nav-links ${menuOpen ? "open" : ""}`}
         >
-          <a className="active" href="#home" onClick={closeMenu}>Home</a>
-          <div className="nav-dropdown">
-            <a href="#products" onClick={closeMenu}>Machines</a>
-            
-          </div>
-          <a href="#gallery" onClick={closeMenu}>Gallery</a>
-          <a href="#contact" onClick={closeMenu}>Contact</a>
+          <a
+            className={activeLink === "home" ? "active" : ""}
+            href="#home"
+            aria-current={activeLink === "home" ? "page" : undefined}
+            onClick={() => handleNavClick("home")}
+          >
+            Home
+          </a>
+          <a
+            className={activeLink === "machines" ? "active" : ""}
+            href="/machines"
+            aria-current={activeLink === "machines" ? "page" : undefined}
+            onClick={() => handleNavClick("machines")}
+          >
+            Machines
+          </a>
+          <a
+            className={activeLink === "gallery" ? "active" : ""}
+            href="#gallery"
+            aria-current={activeLink === "gallery" ? "page" : undefined}
+            onClick={() => handleNavClick("gallery")}
+          >
+            Gallery
+          </a>
+          <a
+            className={activeLink === "contact" ? "active" : ""}
+            href="#contact"
+            aria-current={activeLink === "contact" ? "page" : undefined}
+            onClick={() => handleNavClick("contact")}
+          >
+            Contact
+          </a>
         </nav>
 
         <div className={`contact-box ${menuOpen ? "open" : ""}`}>
@@ -51,7 +91,7 @@ function Header() {
           </div>
 
           <a href="tel:8438434000" className="phone-btn">
-            843 843 4000 / 2000 / 5000
+            843 843 4000 /2000 /5000
           </a>
         </div>
 
@@ -61,3 +101,4 @@ function Header() {
 }
 
 export default Header;
+
