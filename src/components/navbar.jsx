@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/navbar.css";
-import logo from "../asset/arounmanufacturing.png";
+import logo from "../asset/arounlogo.jpeg";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState(() => {
@@ -11,7 +11,7 @@ function Header() {
     }
 
     const hash = window.location.hash.replace("#", "");
-    return hash || "home";
+    return hash === "products" ? "machines" : hash || "home";
   });
 
   const closeMenu = () => setMenuOpen(false);
@@ -58,7 +58,7 @@ function Header() {
           </a>
           <a
             className={activeLink === "machines" ? "active" : ""}
-            href="/machines"
+            href="#products"
             aria-current={activeLink === "machines" ? "page" : undefined}
             onClick={() => handleNavClick("machines")}
           >
@@ -101,4 +101,3 @@ function Header() {
 }
 
 export default Header;
-
