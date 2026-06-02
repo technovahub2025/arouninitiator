@@ -1,5 +1,6 @@
 import Header from './components/navbar';
 import HeroSection from './components/herosection';
+import AboutUs from './components/aboutus';
 import CoreValues from './components/corevalues';
 import ProductCatalog from './components/productcatelog';
 import BulkOrderCTA from './components/bulkorder';
@@ -16,6 +17,7 @@ function App() {
     <>
       <Header />
       <HeroSection />
+      <AboutUs />
 
       <CoreValues/>
 
