@@ -21,7 +21,10 @@ function ContactSection() {
 
   <div>
     <h4>Address</h4>
-    <span>Chennai, Tamil Nadu, India</span>
+    <span>Aroun Manufacturing Industries</span><br></br>
+    <span>14,15 , Sri Krishna Nagar, Poothurai</span><br></br>
+    <span>Vanur Taluk</span><br></br>
+    <span>Villupuram District,Tamil Nadu-605 111</span>
   </div>
 </div>
 

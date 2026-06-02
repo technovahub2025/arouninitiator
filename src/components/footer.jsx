@@ -58,6 +58,8 @@ function Footer() {
           <span>Contact:</span>
 
           <p>+91 843 843 4000</p>
+          <p>+91 843 843 2000</p>
+          <p>+91 843 843 5000</p>
         </div>
 
       </div>
