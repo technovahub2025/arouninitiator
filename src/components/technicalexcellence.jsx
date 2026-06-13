@@ -3,10 +3,10 @@ import mask from "../asset/mask.png";
 import welding from "../asset/maskwelding.png"
 function TechnicalExcellence() {
   return (
-    <section className="technical-section">
+    <section className="technical-section animate-reveal-up" id="manufacturing">
       <div className="technical-container">
 
-        <div className="section-title">
+        <div className="section-title animate-reveal-left">
           <div className="title-line"></div>
           <h2>Technical Excellence</h2>
         </div>
@@ -14,14 +14,14 @@ function TechnicalExcellence() {
         {/* Unit 01 */}
         <div className="tech-row">
 
-          <div className="tech-image">
+          <div className="tech-image animate-pop-in">
             <img
               src={mask}
               alt="N95 Production"
             />
           </div>
 
-          <div className="tech-content">
+          <div className="tech-content animate-reveal-right">
             <span className="unit-label">UNIT 01</span>
 
             <h3>High-Speed N95 Production</h3>
@@ -57,7 +57,7 @@ function TechnicalExcellence() {
         {/* Unit 02 */}
         <div className="tech-row reverse">
 
-          <div className="tech-content">
+          <div className="tech-content animate-reveal-left">
             <span className="unit-label">
               PRECISION ENGINEERING
             </span>
@@ -75,7 +75,7 @@ function TechnicalExcellence() {
             </div>
           </div>
 
-          <div className="tech-image">
+          <div className="tech-image animate-pop-in">
             <img
               src={welding}
               alt="Ultrasonic Welding"

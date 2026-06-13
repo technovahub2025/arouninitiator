@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 360px;
+  height: 220px;
   padding: 0;
   cursor: pointer;
 }
@@ -103,7 +103,7 @@
 
 .gallery-card img {
   width: 100%;
-  height: 320px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -161,11 +161,11 @@
   }
 
   .gallery-card {
-    min-height: 300px;
+    height: 190px;
   }
 
   .gallery-card img {
-    height: 280px;
+    height: 100%;
   }
 
   .gallery-container h2 {

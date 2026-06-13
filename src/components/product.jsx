@@ -54,6 +54,7 @@ function Product() {
 
   useEffect(() => {
     if (selectedImage) {
+      document.body.style.overflow = "hidden";
       return undefined;
     }
 
@@ -62,6 +63,16 @@ function Product() {
     }, 2800);
 
     return () => window.clearInterval(slideInterval);
+  }, [selectedImage]);
+
+  useEffect(() => {
+    if (!selectedImage) {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [selectedImage]);
 
   useEffect(() => {
@@ -91,7 +102,7 @@ function Product() {
   }, [currentIndex, isTransitionEnabled]);
 
   return (
-    <section className="product-section" id="products">
+    <section className="product-section animate-reveal-up" id="products">
       <div className="product-container">
         <h2>Products</h2>
         <p>Explore our products, manufacturing units and achievements.</p>
@@ -114,10 +125,10 @@ function Product() {
               {sliderPosters.map((poster, index) => (
                 <button
                   type="button"
-                  className="product-card"
-                  key={`${poster}-${index}`}
-                  onClick={() => setSelectedImage(poster)}
-                  style={{ width: `${100 / cardsPerView}%` }}
+                className={`product-card animate-pop-in delay-${(index % 6) + 1}`.trim()}
+                key={`${poster}-${index}`}
+                onClick={() => setSelectedImage(poster)}
+                style={{ width: `${100 / cardsPerView}%` }}
                 >
                   <img src={poster} alt={`Product ${(index % posters.length) + 1}`} />
                 </button>
@@ -150,7 +161,7 @@ function Product() {
 
       {selectedImage && (
         <div
-          className="product-lightbox"
+          className="product-lightbox animate-pop-in"
           onClick={() => setSelectedImage(null)}
           role="button"
           tabIndex={0}

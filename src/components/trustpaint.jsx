@@ -26,10 +26,10 @@ function TrustSignals() {
   ];
 
   return (
-    <section className="trust-section">
+    <section className="trust-section animate-reveal-up" id="quality">
       <div className="trust-container">
         {signals.map((item, index) => (
-          <div className="trust-card" key={index}>
+          <div className={`trust-card animate-pop-in delay-${Math.min(index + 1, 6)}`} key={index}>
             <div className="trust-icon">
               {item.icon}
             </div>

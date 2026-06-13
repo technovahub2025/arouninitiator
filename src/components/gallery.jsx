@@ -3,6 +3,11 @@ import "../style/gallery.css";
 import gallery1 from "../asset/gallery1.jpeg";
 import gallery2 from "../asset/gallery2.jpeg";
 import gallery3 from "../asset/gallery3.jpeg";
+import gallery4 from "../asset/gallery4.jpeg";
+import gallery5 from "../asset/gallery5.jpeg";
+import gallery6 from "../asset/gallery6.jpeg";
+import gallery7 from "../asset/gallery7.jpeg";
+import gallery8 from "../asset/gallery8.jpeg";
 
 const getCardsPerView = () => {
   if (window.innerWidth <= 640) {
@@ -21,7 +26,7 @@ function Gallery() {
   const [cardsPerView, setCardsPerView] = useState(getCardsPerView);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitionEnabled, setIsTransitionEnabled] = useState(true);
-  const posters = [gallery1, gallery2, gallery3];
+  const posters = [gallery1, gallery2, gallery3,gallery4,gallery5,gallery6,gallery7,gallery8];
   const sliderPosters = [...posters, ...posters];
   const activeDot = currentIndex % posters.length;
 
@@ -89,7 +94,7 @@ function Gallery() {
   }, [currentIndex, isTransitionEnabled]);
 
   return (
-    <section className="gallery-section" id="gallery">
+    <section className="gallery-section animate-reveal-up" id="gallery">
       <div className="gallery-container">
         <h2>Gallery</h2>
         <p>Explore our products, manufacturing units and achievements.</p>
@@ -104,7 +109,7 @@ function Gallery() {
             &#8249;
           </button>
 
-          <div className="gallery-slider-viewport">
+          <div className="gallery-slider-viewport animate-pop-in">
             <div
               className={`gallery-slider-track ${isTransitionEnabled ? "" : "no-transition"}`.trim()}
               style={{ transform: `translateX(-${currentIndex * (100 / cardsPerView)}%)` }}

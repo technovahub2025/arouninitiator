@@ -1,103 +1,84 @@
 import React, { useState } from "react";
+import { Phone, Mail, MapPin, FilePenLine, ChevronDown, Menu, X } from "lucide-react";
 import "../style/navbar.css";
 import logo from "../asset/arounlogo.jpeg";
-function Header() {
+
+const Header = ({ onQualityClick }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(() => {
-    if (typeof window === "undefined") return "home";
 
-    if (window.location.pathname.includes("machines")) {
-      return "machines";
-    }
-
-    const hash = window.location.hash.replace("#", "");
-    return hash === "products" ? "machines" : hash || "home";
-  });
-
-  const closeMenu = () => setMenuOpen(false);
-
-  const handleNavClick = (key) => {
-    setActiveLink(key);
-    closeMenu();
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    setMenuOpen(false);
   };
+
+
 
   return (
     <header className="header">
-      <div className="header-container">
+      <div className="top-bar">
+        <div className="top-item">
+          <Phone size={14} />
+          <span>843 843 4000 / 2000 / 5000</span>
+        </div>
+        <div className="top-item">
+          <Mail size={14} />
+          <span>arounindustries@gmail.com</span>
+        </div>
+        <div className="top-item top-item-address">
+          <MapPin size={14} />
+          <span>14, 15, Sri Krishna Nagar, Pothurai, Vanur Taluk, Villupuram District, Tamil Nadu 605 111</span>
+        </div>
+      </div>
 
-        <img
-          src={logo}
-          alt="Aroun Industries"
-          className="logo"
-        />
+      <div className="nav-bar">
+        
+           <img
+            src={logo}
+            alt="Aroun Manufacturing Industries"
+            width="520"
+            height="150"
+          />
+      
 
         <button
           type="button"
-          className={`menu-toggle ${menuOpen ? "open" : ""}`}
-          aria-label="Toggle navigation menu"
+          className="nav-menu-toggle"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
-          aria-controls="primary-navigation"
-          onClick={() => setMenuOpen((value) => !value)}
+          onClick={() => setMenuOpen((current) => !current)}
         >
-          <span />
-          <span />
-          <span />
+          {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
 
-        <nav
-          id="primary-navigation"
-          className={`nav-links ${menuOpen ? "open" : ""}`}
-        >
-          <a
-            className={activeLink === "home" ? "active" : ""}
-            href="#home"
-            aria-current={activeLink === "home" ? "page" : undefined}
-            onClick={() => handleNavClick("home")}
-          >
-            Home
-          </a>
-          <a
-            className={activeLink === "machines" ? "active" : ""}
-            href="#products"
-            aria-current={activeLink === "machines" ? "page" : undefined}
-            onClick={() => handleNavClick("machines")}
-          >
-            Machines
-          </a>
-          <a
-            className={activeLink === "gallery" ? "active" : ""}
-            href="#gallery"
-            aria-current={activeLink === "gallery" ? "page" : undefined}
-            onClick={() => handleNavClick("gallery")}
-          >
-            Gallery
-          </a>
-          <a
-            className={activeLink === "contact" ? "active" : ""}
-            href="#contact"
-            aria-current={activeLink === "contact" ? "page" : undefined}
-            onClick={() => handleNavClick("contact")}
-          >
-            Contact
-          </a>
-        </nav>
-
-        <div className={`contact-box ${menuOpen ? "open" : ""}`}>
-          <div className="sales">
-            <span>Sales Inquiry</span>
-            <a href="mailto:arounindustries@gmail.com">
-              arounindustries@gmail.com
+        <div className={`nav-actions ${menuOpen ? "open" : ""}`}>
+          <nav className="nav-links">
+            <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
+            <a href="#about" onClick={() => setMenuOpen(false)}>About Us</a>
+            <a href="#products" className="products-link" onClick={() => setMenuOpen(false)}>
+              Products <ChevronDown size={14} />
             </a>
-          </div>
+            <a href="#manufacturing" onClick={() => setMenuOpen(false)}>Manufacturing</a>
+            <button
+              type="button"
+              onClick={() => {
+                onQualityClick?.();
+                setMenuOpen(false);
+              }}
+            >
+              Quality
+            </button>
+            <a href="#bulk" onClick={() => setMenuOpen(false)}>Bulk Orders</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact Us</a>
+          </nav>
 
-          <a href="tel:8438434000" className="phone-btn">
-            843 843 4000 /2000 /5000
-          </a>
+          <button className="quote-btn" type="button" onClick={() => scrollToSection("bulk")}>
+            <FilePenLine size={17} />
+            Get a Quote
+          </button>
         </div>
-
       </div>
     </header>
   );
-}
+};
 
 export default Header;

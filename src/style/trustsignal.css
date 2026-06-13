@@ -2,6 +2,7 @@
   background: var(--primary-blue);
   padding: 24px 56px;
   animation: reveal-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  scroll-margin-top: 140px;
 }
 
 .trust-container {
