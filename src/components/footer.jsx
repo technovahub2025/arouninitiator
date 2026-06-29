@@ -70,6 +70,13 @@ function Footer() {
         </p>
 
         <div>
+          <a
+            href="https://arunkumarappadoure.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Portfolio
+          </a>
           <a href="/">Terms</a>
           <a href="/">Privacy</a>
         </div>
